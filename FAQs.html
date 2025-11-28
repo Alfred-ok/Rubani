@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rubani Sacco</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    .bg-section {
+        position: relative;
+        background: #ffffff;
+        background-image: url('./img/pattern.jpg');
+        background-size: "30px";
+        background-position: center;
+    }
+
+    .bg-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        /* control opacity here */
+        pointer-events: none;
+    }
+
+    .bg-section .content {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 py-2 d-none d-lg-block" style="background-color: #0ea4e937">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="#" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Rubani House, Off Airport North
+                                Embakasi</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:example@gmail.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>rubanisacco@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand p-0">
+                    <h3 class="text-primary mb-0 "><img src="img/rubanilogo.jpeg" alt="Logo"> Rubani Sacco</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Product</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                            </div>
+                        </div> -->
+                        <a href="FAQs.html" class="nav-item nav-link active">FAQs</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-btn px-3">
+                            <a href="#" class="btn btn-primary py-2 px-4 ms-3 flex-shrink-0"> Member Portal</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt fa-2x"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call Us</span>
+                        <a href="tel:+ 0123 456 7890"><span class="text-dark">Tel: +254(0)20-820354/821243</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">FAQs</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">FAQs</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- FAQ Start -->
+    <div class="bg-section">
+        <div class="container-fluid py-5 content">
+            <div class="container py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s"
+                    style="max-width: 700px; margin: 0 auto;">
+                    <h4 class="text-primary" style="color:#0ea5e9;">FAQ’s (frequently asked questions)</h4>
+                    <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-xl-10 mx-auto">
+                        <div class="accordion" id="rubaniFAQ">
+
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqOne" aria-expanded="true">
+                                        1. What is a SACCO?
+                                    </button>
+                                </h2>
+                                <div id="faqOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        SACCO is an acronym for Savings and Credit Co-Operative, and I would define it
+                                        as an
+                                        association of like-minded individuals, registered under the Ministry of
+                                        Cooperatives
+                                        (in Kenya), and authorized to take deposits from and lend to its members. SACCOs
+                                        are
+                                        governed by the SACCO bylaws which state the objectives, membership, share
+                                        capital,
+                                        organization structure, management and lending regulations.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.3s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                                        2. Who is eligible for membership of Rubani Sacco?
+                                    </button>
+                                </h2>
+                                <div id="faqTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Any person who is a Pilot by profession and employed by any Airline operating at
+                                        any
+                                        Kenyan Airport. A person who is an employee of the society and is not a member
+                                        of
+                                        another Sacco, pays the entrance fee (Ksh 3,000) and share capital (Ksh 10,000)
+                                        as
+                                        prescribed in the society’s by-laws. However, no member shall hold more than
+                                        one-fifth
+                                        of the total shares of the society.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqThree">
+                                        3. What do I do if I want to join Rubani Sacco but am already a member of
+                                        another
+                                        Sacco?
+                                    </button>
+                                </h2>
+                                <div id="faqThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Write a letter of resignation to your current SACCO instructing them to remit
+                                        your
+                                        dues
+                                        to RUBANI SACCO, then start saving with RUBANI SACCO forthwith. You are treated
+                                        as
+                                        an
+                                        ongoing member with full benefits e.g. no waiting period to borrow etc.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.5s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqFour">
+                                        4. Can I transfer my shares to another person?
+                                    </button>
+                                </h2>
+                                <div id="faqFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Yes, with the approval of the Management Committee at any time. If transfer of
+                                        shares
+                                        to another person is allowed, the person must be a member of Rubani Sacco. This
+                                        is
+                                        done
+                                        in writing and at a nominal value. All transfers shall be registered with the
+                                        society
+                                        and no transfer shall be valid unless so registered. A fee of Ksh 3,000 shall be
+                                        payable
+                                        by the transferee for each such transfer.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.6s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqFive">
+                                        5. How long do I need to save before borrowing?
+                                    </button>
+                                </h2>
+                                <div id="faqFive" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        You only need to save consistently for six months to start borrowing.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.7s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqSix">
+                                        6. How long do I need to wait after boosting my deposits to apply for a loan?
+                                    </button>
+                                </h2>
+                                <div id="faqSix" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        After boosting your deposits, a member is required to wait at least six months
+                                        before
+                                        applying for a loan.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 7 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.8s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqSeven">
+                                        7. How many guarantors do I need for my loan?
+                                    </button>
+                                </h2>
+                                <div id="faqSeven" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        The amount of money to be guaranteed is the difference between your savings and
+                                        the
+                                        amount requested. The number of guarantors will therefore depend on the amount
+                                        they
+                                        have
+                                        to offer towards this. Note that guarantors’ deposits plus your own deposit must
+                                        sum
+                                        up
+                                        to the amount of loan applied for.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 8 -->
+                            <div class="accordion-item rounded shadow-sm mb-3 wow fadeInUp" data-wow-delay="0.9s">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqEight">
+                                        8. Can I borrow even after guaranteeing someone?
+                                    </button>
+                                </h2>
+                                <div id="faqEight" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Yes, guaranteeing someone does not stop you from taking a loan. In fact, you can
+                                        co-guarantee each other. You can also guarantee more than one person provided
+                                        you
+                                        have
+                                        enough free deposits to guarantee the next person.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FAQ End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-9">
+                    <div class="mb-5">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-5">
+                                <div class="footer-item">
+                                    <a href="index.html" class="p-0">
+                                        <h3 class="text-white">
+                                            <img src="img/rubanilogo.jpeg" alt="Logo" style="max-width: 300px;">
+                                        </h3>
+                                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                                    </a>
+                                    <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr
+                                        est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                    <div class="footer-btn d-flex">
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Useful Links</h4>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="footer-item">
+                                    <h4 class="mb-4 text-white">Gallery</h4>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-1.jpg"
+                                                        data-lightbox="footerInstagram-1" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-2.jpg"
+                                                        data-lightbox="footerInstagram-2" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-3.jpg"
+                                                        data-lightbox="footerInstagram-3" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-4.jpg"
+                                                        data-lightbox="footerInstagram-4" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-5.jpg"
+                                                        data-lightbox="footerInstagram-5" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="footer-instagram rounded">
+                                                <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
+                                                <div class="footer-search-icon">
+                                                    <a href="img/instagram-footer-6.jpg"
+                                                        data-lightbox="footerInstagram-6" class="my-auto"><i
+                                                            class="fas fa-link text-white"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="footer-item">
+
+                        <div class="d-flex flex-shrink-0">
+                            <div class="footer-btn">
+                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                    data-wow-delay=".9s">
+                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                    <div class="position-absolute" style="top: 2px; right: 12px;">
+                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                <span>Call Us</span>
+                                <a href="tel:+ 0123 456 7890"><span class="text-white">Tel:
+                                        +254(0)20-820354/821243</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
